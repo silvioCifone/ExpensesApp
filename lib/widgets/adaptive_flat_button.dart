@@ -14,16 +14,16 @@ class AdaptiveFlatButton extends StatelessWidget {
     return Platform.isIOS
         ? CupertinoButton(
             onPressed: handler,
-            child: Text(
+            child: const Text(
               "Choose Date!",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           )
         : FlatButton(
             onPressed: handler,
-            child: Text(
+            child: const Text(
               "Choose Date!",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
             textColor: Theme.of(context).primaryColor,
           );

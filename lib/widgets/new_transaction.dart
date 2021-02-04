@@ -69,7 +69,7 @@ class _NewTransactionState extends State<NewTransaction> {
                       onSubmitted: (_) => _submitNewTransaction(),
                     )
                   : TextField(
-                      decoration: InputDecoration(labelText: "Title"),
+                      decoration: const InputDecoration(labelText: "Title"),
                       controller: _titleController,
                       onSubmitted: (_) => _submitNewTransaction(),
                     ),
@@ -78,7 +78,7 @@ class _NewTransactionState extends State<NewTransaction> {
                       placeholder: "Amount",
                       controller: _amountController,
                       keyboardType:
-                          TextInputType.numberWithOptions(decimal: true),
+                          const TextInputType.numberWithOptions(decimal: true),
                       onSubmitted: (_) => _submitNewTransaction(),
                     )
                   : TextField(
@@ -109,12 +109,12 @@ class _NewTransactionState extends State<NewTransaction> {
               Platform.isIOS
                   ? CupertinoButton(
                       onPressed: _submitNewTransaction,
-                      child: Text("Add Transaction"),
+                      child: const Text("Add Transaction"),
                       color: Theme.of(context).primaryColor,
                     )
                   : RaisedButton(
                       onPressed: _submitNewTransaction,
-                      child: Text("Add Transaction"),
+                      child: const Text("Add Transaction"),
                       color: Theme.of(context).primaryColor,
                       textColor: Theme.of(context).textTheme.button.color,
                     )
